@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css');
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+header {
+  background: #4a90e2;
+  display: flex;
+  justify-content: center;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 55px;
+  min-width: 95vw;
+  color: white;
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+#profile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100px;
+  font-weight: bold;
+}
+/* header */
