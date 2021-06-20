@@ -7,7 +7,9 @@ function App(){
   return (
   <>
     <Header/>
-    <PostList/>
+    <main>
+      <PostList/>
+    </main>
   </>
   );
 }

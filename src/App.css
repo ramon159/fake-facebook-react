@@ -3,6 +3,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+
 }
 
 /* header */
@@ -10,18 +12,27 @@ header {
   background: #4a90e2;
   display: flex;
   justify-content: center;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  overflow: hidden;
+  z-index: 1;
 }
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 55px;
+  max-height: 64px;
   min-width: 95vw;
   color: white;
   padding: 5px 0;
   font-size: 15px;
 }
-
+main {
+  margin-top: 70px;
+  height: 100vh;
+}
 #profile-nav {
   display: flex;
   align-items: center;
@@ -30,3 +41,72 @@ header nav {
   font-weight: bold;
 }
 /* header */
+
+
+/* postList */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  width: 500px; /* 700px */
+  margin: 0 auto;
+  align-items: center;
+}
+.post {
+  margin-top: 10px;
+  background-color:white;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.post-header {
+  display: flex;
+  align-items: center;
+}
+.post-header .post-info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  color: #9a9a9a;
+  line-height: 14px;
+}
+.author-name {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+.post-header .post-info span:first-child {
+  margin-bottom: 3px;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+.comment {
+  display: flex;
+  margin-top: 15px;
+  font-size: 0.8em;
+}
+.comment .avatar{
+  width: 40px;
+  height: 40px;
+}
+.box-comment {
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 10px;
+}
+.text-comment {
+  word-wrap: break-word;
+  max-width: 400px;
+}
+
+.avatar {
+  clip-path: circle();
+  width: 50px;
+  height: 50px;
+}
+/* postList */
